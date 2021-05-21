@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="ui.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,200&display=swap" rel="stylesheet">
+        <script src="ui.js"></script>
+    </head>
+    <body>
+        <left>
+            <img src="https://images-ext-1.discordapp.net/external/DcMFFeNjUaO9e4v0sWvgder8GFTRk2Od5znChiNtlp4/%3Fwidth%3D523%26height%3D523/https/media.discordapp.net/attachments/742443024964911144/828426692635787304/luna_rp_logo.png">    
+            <p id="stock"><b>Carburant en stock</b>:<BR> 150</p>
+            <div class="act">
+                <button id="retirar">Pour compléter</button>
+                <button id="guardar">Prix au litres</button>
+            </div>
+        </left>
+        <div class="container">
+            <small>Prix au litres</small><br>
+            <span>Vehicule</span>
+            <div class="box">
+                <span id="title">Prix à payer</span>
+                <div class="item" style="border: none;">
+                    <button id="minus">-</button>
+                    <input id="amount" type="number" placeholder="$">
+                    <button id="plus" style="right: 5px;">+</button>
+                </div>
+            </div>
+            <div class="box">
+                <span id="title">Carburant pour véhicules</span>
+                <div class="item">
+                    <div class="litro">
+                        <span><span>$</span> 0.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <span id="title">Prix par litre</span>
+                <div class="item">
+                    <span id="fuel-price"><span style="font-size: 18px;">$</span> 1.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <button class="accept btninfo">Confirmé</button>
+            <span>Vous êtes sûr de vouloir remplir le réservoir qui vaut...<br><b>$ 85,00</b></span>
+            <button class="recuse btninfo">Annuler</button>
+        </div>
+    </body>
+</html>
